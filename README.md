@@ -1,5 +1,7 @@
 # Cowboy Cigarettes Time Series 
 
+![image](https://user-images.githubusercontent.com/86930309/228976763-220ad79d-9dbd-4d9f-8f58-975f779f0f1e.png)
+
 You're working in the US federal government as a data scientist in the Health and Environment department. You've been tasked with determining whether sales for the oldest
 and most powerful producers of cigarettes in the country are increasing or declining. Cowboy Cigarettes (TM, est. 1890) is the US's longest-running cigarette manufacturer.
 
@@ -8,8 +10,7 @@ years after they resumed production in 1949; stopping in 1960 before resuming ag
 
 Your job is to use the 1949-1960 data to predict whether the manufacturer's cigarette sales actually increased, decreased, or stayed the same. You need to make a
 probable reconstruction of the sales record of the manufacturer. Predicting the future from the perspective of the past and to contribute to a full report on US public
-health in relation to major cigarette companies. The results of your analysis will be used as part of a major report relating public health and local economics, and will
-be combined with other studies executed by your colleagues to provide important government advice.
+health in relation to major cigarette companies. The results of your analysis will be used as part of a major report relating public health and local economics, and will be combined with other studies executed by your colleagues to provide important government advice.
 
 ## 1. Sourcing and loading
 
