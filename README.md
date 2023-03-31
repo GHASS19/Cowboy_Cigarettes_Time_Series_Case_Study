@@ -18,9 +18,9 @@ health in relation to major cigarette companies. The results of your analysis wi
 
 - Explore the data
 
-A. 144 Rows and 3 columns
+A. 144 Rows and 3 columns.
 
-B. No null values
+B. No null values.
 
 ## 2. Cleaning, transforming and visualizing
 
@@ -44,9 +44,9 @@ The sales have a positive trend
 
 - Decomposition
 
- The Cowboy Cigarettes data is actually multiplicative.
+A. The Cowboy Cigarettes data is actually multiplicative.
 
-As time progresses the general trend seems to be increasing at a rate that's also increasing. We also see that the seasonal fluctuations, (the peaks and troughs) get bigger and bigger as time progresses.
+B. As time progresses the general trend seems to be increasing at a rate that's also increasing. We also see that the seasonal fluctuations, (the peaks and troughs) get bigger and bigger as time progresses.
 
 - Trend, Seasonality and Noise graph of the cigarette sales:
 
@@ -56,12 +56,20 @@ The seasonal trends are increasing over time.
 
 - Testing for stationarity with KPSS
 
-Since our p-value is less than 0.05, we should reject the Null hypothesis and deduce the non-stationarity of our data.But our data need to be stationary! So we need to
+Since our p-value is less than 0.05, we should reject the Null hypothesis and deduce the non-stationarity of our data. Our data need to be stationary! So we need to
 do some transforming.
 
 - Making the data stationary
 
+A. We have a constant variance, but we also need a constant mean. We can do this by differencing our data.
+
+B. This is a graph of the sales using .diff() to make the data stationary:
+
+![image](https://user-images.githubusercontent.com/86930309/229015554-bc48e2f3-d8c5-480c-8cbe-8a95987b0625.png)
+
 - The ARIMA Model
+
+The ARIMA models are based around the idea that it's possible to predict the next value in a time series by using information about the most recent data points. The model also accounts for completely random data points that cannot be predicted.
 
 - Make a function to find the MSE of a single ARIMA model
 
