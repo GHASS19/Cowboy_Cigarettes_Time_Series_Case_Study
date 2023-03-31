@@ -73,18 +73,28 @@ The ARIMA models are based around the idea that it's possible to predict the nex
 
 - Make a function to find the MSE of a single ARIMA model
 
-- Make a function to evaluate the different ARIMA models with different p, d, and q values
+- Make a function to evaluate the different ARIMA models with different p, d, and q values 
 
-- Visualize the results
+The best p,d, q parameters for our ARIMA model are 2, 1, 1 respectively.
+
+- Visualize the results:
+
+![image](https://user-images.githubusercontent.com/86930309/229018731-23605d59-e16d-4312-8419-73fdc1da02bb.png)
+
+Our Arima model fits the data pretty well.
 
 - Application: Forecasting
+
+This is a graph of of the ARIMA model predicting cigarette sales starting in December of 1960 with the original y variable:
+
+![image](https://user-images.githubusercontent.com/86930309/229020741-b66cf696-7ccf-4ec3-81ce-452f3277c2ba.png)
 
 ## 4. Evaluating and concluding
 
 - What is our conclusion?
 
-Our model captures the centre of a line that's increasing at a remarkable rate. Cowboy Cigarettes sell more cigarettes in the summer, perhaps due to the good weather, disposable income and time off that people enjoy, and the least in the winter, when people might be spending less and enjoying less free time outdoors.
+Our model captures the centre of a line that's increasing at a remarkable rate. Cowboy Cigarettes sell more cigarettes in the summer. Perhaps due to the good weather, disposable income and time off that people enjoy. The least amount of sales are in the winter when people might be spending less and enjoying less free time outdoors.
 
-Remarkably, our ARIMA model made predictions using just one variable. We can only speculate, however, on the causes of the behaviour predicted by our model. We should also take heed that spikes in data, due to sudden unusual circumstances like wars, are not handled well by ARIMA; and the outbreak of the Vietnam War in the 1960s would likely cause our model some distress.
+Remarkably our ARIMA model made predictions using just one variable. We can only speculate on the causes of the behaviour predicted by our model. We should also take heed that spikes in data, due to sudden unusual circumstances like wars, are not handled well by ARIMA. The outbreak of the Vietnam War in the 1960s would likely cause our model some distress.
 
-We could suggest to our employers that, if they are interested in discovering the causes of the cigarette sales trajectory, they execute a regression analysis in addition to the time series one.
+We could suggest to our employers that they execute a regression analysis in addition to this time series.
