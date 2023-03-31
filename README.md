@@ -6,9 +6,7 @@ You are working in the US federal government as a data scientist in the Health a
 
 Like many cigarette companies, however, they haven't always been that public about their sales and marketing data. The available post-war historical data runs for only 11 years after they resumed production in 1949; stopping in 1960 before resuming again in 1970. 
 
-Your job is to use the 1949-1960 data to predict whether the manufacturer's cigarette sales actually increased, decreased, or stayed the same. You need to make a
-probable reconstruction of the sales record of the manufacturer. Predicting the future from the perspective of the past and to contribute to a full report on US public
-health in relation to major cigarette companies. The results of your analysis will be used as part of a major report relating public health and local economics, and will be combined with other studies executed by your colleagues to provide important government advice.
+Your job is to use the 1949-1960 data to predict whether the manufacturer's cigarette sales after they stopped in 1960 actually increased, decreased, or stayed the same. You need to make a probable reconstruction of the sales record of the manufacturer. Predicting the future from the perspective of the past and to contribute to a full report on US public health in relation to major cigarette companies. The results of your analysis will be used as part of a major report relating public health and local economics, and will be combined with other studies executed by your colleagues to provide important government advice.
 
 ## 1. Sourcing and loading
 
