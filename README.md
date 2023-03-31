@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/86930309/228976763-220ad79d-9dbd-4d9f-8f58-975f779f0f1e.png)
 
-You're working in the US federal government as a data scientist in the Health and Environment department. You've been tasked with determining whether sales for the oldest and most powerful producers of cigarettes in the country are increasing or declining. Cowboy Cigarettes (TM, est. 1890) is the US's longest-running cigarette manufacturer.
+You are working in the US federal government as a data scientist in the Health and Environment department. You've been tasked with determining whether sales for the oldest and most powerful producers of cigarettes in the country are increasing or declining. Cowboy Cigarettes (TM, est. 1890) is the US's longest-running cigarette manufacturer.
 
 Like many cigarette companies, however, they haven't always been that public about their sales and marketing data. The available post-war historical data runs for only 11 years after they resumed production in 1949; stopping in 1960 before resuming again in 1970. 
 
