@@ -16,7 +16,7 @@ health in relation to major cigarette companies. The results of your analysis wi
 
 - Load relevant libraries
 
-- Load the data
+- Load the [data](https://github.com/GHASS19/Cowboy_Cigarettes_Time_Series_Case_Study.ipynb/blob/main/Data/CowboyCigsData%20(Time%20Series%20Analysis).csv)
 
 - Explore the data
 
