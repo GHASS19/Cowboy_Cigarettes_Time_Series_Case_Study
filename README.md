@@ -10,11 +10,11 @@ Your job is to use the 1949-1960 data to predict the manufacturer's cigarette sa
 
 ## 1. Sourcing and loading
 
-- Load relevant libraries
+### - Load relevant libraries
 
-- Load the [data](https://github.com/GHASS19/Cowboy_Cigarettes_Time_Series_Case_Study.ipynb/blob/main/Data/CowboyCigsData%20(Time%20Series%20Analysis).csv)
+### - Load the [data](https://github.com/GHASS19/Cowboy_Cigarettes_Time_Series_Case_Study.ipynb/blob/main/Data/CowboyCigsData%20(Time%20Series%20Analysis).csv)
 
-- Explore the data
+### - Explore the data
 
 A. 144 Rows and 3 columns.
 
@@ -22,17 +22,21 @@ B. No null values.
 
 ## 2. Cleaning, transforming and visualizing
 
-- Dropping the unwanted unnamed column
+### - Dropping the unwanted unnamed column
 
-- Nomenclature. Change column year to month
+### - Nomenclature. Change column year to month
 
-- Type conversions. Change the month column object to a datetime
+### - Type conversions
 
-- Making a predictor variable y. Our dependant variable will be cigarette sales column since we want to predict the manufacturer's sales
+A. Change the month column object to a datetime.
 
-- Getting summary statistics for y
+### - Making a predictor variable y
 
-- Plotting y
+A. Our dependant variable will be cigarette sales column since we want to predict the manufacturer's sales.
+
+### - Getting summary statistics for y
+
+### - Plotting y:
 
 ![image](https://user-images.githubusercontent.com/86930309/229005100-4dd019cf-694d-4aa5-8b1c-51debb8c1d03.png)
 
@@ -40,24 +44,24 @@ The sales have a positive trend
 
 ## 3. Modelling
 
-- Decomposition
+### - Decomposition
 
 A. The Cowboy Cigarettes data is actually multiplicative.
 
 B. As time progresses the general trend seems to be increasing at a rate that's also increasing. We also see that the seasonal fluctuations, (the peaks and troughs) get bigger and bigger as time progresses.
 
-- Trend, Seasonality and Noise graph of the cigarette sales:
+### - Trend, Seasonality and Noise graph of the cigarette sales:
 
 ![image](https://user-images.githubusercontent.com/86930309/229006792-7083d6da-7b5d-45ac-aca1-72c5d4c11bb2.png)
 
 The seasonal trends are increasing over time.
 
-- Testing for stationarity with KPSS
+### - Testing for stationarity with KPSS
 
 Since our p-value is less than 0.05, we should reject the Null hypothesis and deduce the non-stationarity of our data. Our data need to be stationary! So we need to
 do some transforming.
 
-- Making the data stationary
+### - Making the data stationary
 
 A. We have a constant variance, but we also need a constant mean. We can do this by differencing our data.
 
@@ -65,23 +69,25 @@ B. This is a graph of the sales using .diff() to make the data stationary:
 
 ![image](https://user-images.githubusercontent.com/86930309/229015554-bc48e2f3-d8c5-480c-8cbe-8a95987b0625.png)
 
-- The ARIMA Model
+### - The ARIMA Model
 
-The ARIMA models are based around the idea that it's possible to predict the next value in a time series by using information about the most recent data points. The model also accounts for completely random data points that cannot be predicted.
+A. The ARIMA models are based around the idea that it's possible to predict the next value in a time series by using information about the most recent data points.
 
-- Make a function to find the MSE of a single ARIMA model
+B. The model also accounts for completely random data points that cannot be predicted.
 
-- Make a function to evaluate the different ARIMA models with different p, d, and q values 
+### - Make a function to find the MSE of a single ARIMA model
 
-The best p,d, q parameters for our ARIMA model are 2, 1, 1 respectively.
+### - Make a function to evaluate the different ARIMA models with different p, d, and q values 
 
-- Visualize the results:
+A. The best p,d, q parameters for our ARIMA model are 2, 1, 1 respectively.
+
+### - Visualize the results:
 
 ![image](https://user-images.githubusercontent.com/86930309/229018731-23605d59-e16d-4312-8419-73fdc1da02bb.png)
 
 Our Arima model fits the data pretty well.
 
-- Application: Forecasting
+### - Application: Forecasting
 
 This is a graph of of the ARIMA model predicting cigarette sales starting in December of 1960 with the original y variable:
 
@@ -89,7 +95,7 @@ This is a graph of of the ARIMA model predicting cigarette sales starting in Dec
 
 ## 4. Evaluating and concluding
 
-- What is our conclusion?
+### - What is our conclusion?
 
 Our model captures the center of a line that's increasing at a remarkable rate. Cowboy Cigarettes sell more cigarettes in the summer. Perhaps due to the good weather, disposable income and time off that people enjoy. The least amount of sales are in the winter when people might be spending less and enjoying less free time outdoors.
 
