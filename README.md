@@ -18,19 +18,19 @@ health in relation to major cigarette companies. The results of your analysis wi
 
 - Explore the data
 
-A. 144 Rows and 3 columns.
+A. 144 Rows and 3 columns
 
-B. No null values.
+B. No null values
 
 ## 2. Cleaning, transforming and visualizing
 
-- Dropping the unwanted unnamed column.
+- Dropping the unwanted unnamed column
 
-- Nomenclature. Change column year to month.
+- Nomenclature. Change column year to month
 
-- Type conversions. Change the month column object to a datetime.
+- Type conversions. Change the month column object to a datetime
 
-- Making a predictor variable y. Our dependant variable will be cigarette sales column since we want to predict the manufacturer's sales.
+- Making a predictor variable y. Our dependant variable will be cigarette sales column since we want to predict the manufacturer's sales
 
 - Getting summary statistics for y
 
@@ -38,7 +38,7 @@ B. No null values.
 
 ![image](https://user-images.githubusercontent.com/86930309/229005100-4dd019cf-694d-4aa5-8b1c-51debb8c1d03.png)
 
-The sales have a positive trend.
+The sales have a positive trend
 
 ## 3. Modelling
 
@@ -48,7 +48,7 @@ The sales have a positive trend.
 
 As time progresses the general trend seems to be increasing at a rate that's also increasing. We also see that the seasonal fluctuations, (the peaks and troughs) get bigger and bigger as time progresses.
 
-- Trend,Seasonality, Noise
+- Trend, Seasonality and Noise graph of the cigarette sales:
 
 ![image](https://user-images.githubusercontent.com/86930309/229006792-7083d6da-7b5d-45ac-aca1-72c5d4c11bb2.png)
 
