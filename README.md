@@ -1,4 +1,4 @@
-# Cowboy Cigarettes Time Series 
+# Cowboy Cigarettes Time Series ARIMA
 
 ![image](https://user-images.githubusercontent.com/86930309/228976763-220ad79d-9dbd-4d9f-8f58-975f779f0f1e.png)
 
